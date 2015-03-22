@@ -1,48 +1,165 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+* { 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 body {
-	line-height: 1;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
-ol, ul {
-	list-style: none;
+div {
+ 
 }
-blockquote, q {
-	quotes: none;
+.top-navigation {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;i
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+.top-navigation > .content {
+    margin: 0 auto;
+    width: 970px;
+    height: 70px;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.top-navigation .logo {
+    height: 70px;
+}
+.img {
+	margin-left: 20px;
+}
+.top-navigation .links {
+	float: right;
+    color: #838994;
+    font-size: 16px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+.links li{
+	display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+.introduction {
+	background-image: url('../images/first-background.jpg');
+	background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+}
+
+.introduction > .content { 
+	color: white;
+	margin: 0 auto;
+    width: 970px;
+    height: 70px;
+    text-align: center;
+    font-weight: 300;
+}
+.introduction h1 {
+	padding-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.introduction h3 { 
+	margin-top: 1.25rem;
+	font-size: 1.5rem;
+}
+.big-button { 
+	text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+	margin: 0 auto;
+    background-color: #f15a29;
+    width: 9.688rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.introduction button:hover {
+	background-color: #d9400e;
+	cursor: pointer; 
+}
+.cases { 
+	background-color: white; 
+	color: black;
+	font-size: 2.5rem;
+	padding-top: 10rem;
+	padding-bottom: 15rem;
+}
+.cases .devices li {
+    width: 33%;
+    display: inline-block;
+    /*border: 1px solid black;*/
+    box-sizing: border-box;
+    height: 4em;
+    float: left;
+}
+.cases h2 { 
+	text-align: center;
+	font-weight: 100;
+	padding-bottom: 1.5em;
+}
+.devices li img { 
+	width: 33%;
+	margin: 0 auto;
+	display: block;
+}
+.caption { 
+	font-size: .6em;
+    text-align: center;
+    font-weight: 200;
+    padding: 1.5em;
+}
+.social {
+	width: 100%; 
+	display: block;
+	padding-top: 2em;
+	padding-bottom: 9rem;
+}
+.social .content { 
+	width: 970px;
+	padding: 1rem;
+}
+.social .content hr { 
+	border: 0;
+	border-top: 1px solid #eaebec;
+	margin: 1.3rem 0;
+}
+.social .content h4 { 
+	text-align: center;
+	padding-bottom: 1rem;
+}
+.social .content .icons { 
+	margin: 12px auto;
+	width: 300px;
+	text-align: center;
+}
+.social .content .icons > li { 
+	display: inline;
+	text-align: center;
+	border-radius: 5rem;
+	width: 4rem;
+	height: 4rem;
+	padding: 1rem;
+	text-align: center;
+	margin: .5rem;
+}
+.social .content .icons .twitter { 
+	color: #3f729b;
+	size: .2rem;
+}
+.social .content .icons .facebook { 
+	color: #4c66a4;
+}
+.social .content .icons .instagram { 
+	color: #3f729b;
 }
