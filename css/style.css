@@ -128,6 +128,7 @@ div {
 .social .content { 
 	width: 970px;
 	padding: 1rem;
+	margin: 0 auto;
 }
 .social .content hr { 
 	border: 0;
